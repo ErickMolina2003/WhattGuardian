@@ -14,7 +14,7 @@ import { SearchIcon } from "@/components/Icons";
 import { useRouter } from "expo-router";
 import { electrodomesticTranslation } from "@/components/auth/Register";
 
-const data = {
+export const data = {
   labels: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
   datasets: [
     {
@@ -25,7 +25,7 @@ const data = {
   ],
 };
 
-const chartConfig = {
+export const chartConfig = {
   backgroundGradientFromOpacity: 0,
   backgroundGradientTo: "#ffff",
   backgroundGradientToOpacity: 0.5,
@@ -68,7 +68,7 @@ export function getImages(value: string) {
   return WaterImg;
 }
 
-const screenWidth = Dimensions.get("window").width - 10;
+export const screenWidth = Dimensions.get("window").width - 10;
 
 export default function Dashboard() {
   const { user } = useAppStore();
