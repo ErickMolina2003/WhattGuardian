@@ -49,42 +49,63 @@ const ELECTRODOMESTICS_OPTIONS = [
     amount: 1,
     icon: FridgeIcon,
     hoursPerDay: 1,
+    brand: { value: "", label: "" },
+    model: "",
+    date: new Date(),
   },
   {
     value: ELECTRODOMESTICS_TYPE.WASHER,
     amount: 1,
     icon: WashingIcon,
     hoursPerDay: 1,
+    brand: { value: "", label: "" },
+    model: "",
+    date: new Date(),
   },
   {
     value: ELECTRODOMESTICS_TYPE.TV,
     amount: 4,
     icon: TvIcon,
     hoursPerDay: 1,
+    brand: { value: "", label: "" },
+    model: "",
+    date: new Date(),
   },
   {
     value: ELECTRODOMESTICS_TYPE.AIR_CONDITIONER,
     amount: 1,
     icon: AirIcon,
     hoursPerDay: 1,
+    brand: { value: "", label: "" },
+    model: "",
+    date: new Date(),
   },
   {
     value: ELECTRODOMESTICS_TYPE.MICROWAVE,
     amount: 1,
     icon: MicrowaveIcon,
     hoursPerDay: 1,
+    brand: { value: "", label: "" },
+    model: "",
+    date: new Date(),
   },
   {
     value: ELECTRODOMESTICS_TYPE.PC,
     amount: 4,
     icon: LaptopIcon,
     hoursPerDay: 1,
+    brand: { value: "", label: "" },
+    model: "",
+    date: new Date(),
   },
   {
     value: ELECTRODOMESTICS_TYPE.WATER_HEATER,
     amount: 4,
     icon: WaterHeaterIcon,
     hoursPerDay: 1,
+    brand: { value: "", label: "" },
+    model: "",
+    date: new Date(),
   },
 ];
 
@@ -96,8 +117,7 @@ export function electrodomesticTranslation(value: ELECTRODOMESTICS_TYPE) {
     return "Aire acondicionado";
   if (value === ELECTRODOMESTICS_TYPE.MICROWAVE) return "Microondas";
   if (value === ELECTRODOMESTICS_TYPE.PC) return "Computadora";
-  if (value === ELECTRODOMESTICS_TYPE.WATER_HEATER)
-    return "Calentador de agua";
+  if (value === ELECTRODOMESTICS_TYPE.WATER_HEATER) return "Calentador de agua";
 }
 
 export default function Register() {

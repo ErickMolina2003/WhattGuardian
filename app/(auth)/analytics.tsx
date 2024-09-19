@@ -148,7 +148,7 @@ export default function Analytics() {
                 className="flex flex-row bg-app-gray-100 mb-2 p-3 rounded-md"
               >
                 <Text className="w-[70%] font-normal text-sm text-app-gray-300">
-                  {option.value}
+                  {electrodomesticTranslation(option.value)}
                 </Text>
                 <Text className="w-[15%] font-normal text-sm text-app-gray-300 text-right">
                   {getRandomApplianceKWh()}
