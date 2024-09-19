@@ -82,7 +82,7 @@ export default function Dashboard() {
       <View className="flex">
         <View>
           <View className="mb-5">
-            <Text className="text-xl font-normal text-app-cyan-900">
+            <Text className="text-2xl font-bold text-app-cyan-900">
               Consumo Actual
             </Text>
           </View>

@@ -110,6 +110,12 @@ export default function Layout() {
               href: null,
             }}
           />
+          <Tabs.Screen
+            name="libraryDetail"
+            options={{
+              href: null,
+            }}
+          />
         </Tabs>
       </>
     </View>
