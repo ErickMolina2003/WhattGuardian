@@ -125,3 +125,11 @@ export const AddIcon = (props) => (
 export const ClockIcon = (props) => (
   <AntDesign name="clockcircleo" size={24} {...props} />
 );
+
+export const GridIcon = (props) => (
+  <Ionicons name="grid-outline" size={24} {...props} />
+);
+
+export const PodiumIcon = (props) => (
+  <Ionicons name="podium-outline" size={24} {...props} />
+);

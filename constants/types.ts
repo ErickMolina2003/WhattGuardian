@@ -12,6 +12,7 @@ export interface UserStore {
     email: string;
     name: string;
     updatedAt: Timestamp;
+    electrodomestics?: ELECTRODOMESTICS_OPTIONS_TYPE[];
 }
 
 export enum ELECTRODOMESTICS_TYPE {

@@ -88,6 +88,18 @@ const ELECTRODOMESTICS_OPTIONS = [
   },
 ];
 
+export function electrodomesticTranslation(value: ELECTRODOMESTICS_TYPE) {
+  if (value === ELECTRODOMESTICS_TYPE.FRIDGE) return "Refrigerador";
+  if (value === ELECTRODOMESTICS_TYPE.WASHER) return "Lavadora";
+  if (value === ELECTRODOMESTICS_TYPE.TV) return "Televisor";
+  if (value === ELECTRODOMESTICS_TYPE.AIR_CONDITIONER)
+    return "Aire acondicionado";
+  if (value === ELECTRODOMESTICS_TYPE.MICROWAVE) return "Microondas";
+  if (value === ELECTRODOMESTICS_TYPE.PC) return "Computadora";
+  if (value === ELECTRODOMESTICS_TYPE.WATER_HEATER)
+    return "Calentador de agua";
+}
+
 export default function Register() {
   const [registerStep, setRegisterStep] = useState<REGISTER_STEPS>(
     REGISTER_STEPS.EMAIL
@@ -187,18 +199,6 @@ export default function Register() {
 
     electrodomesticsOptions[index].amount--;
     setElectrodomesticsOptions([...electrodomesticsOptions]);
-  }
-
-  function electrodomesticTranslation(value: ELECTRODOMESTICS_TYPE) {
-    if (value === ELECTRODOMESTICS_TYPE.FRIDGE) return "Refrigerador";
-    if (value === ELECTRODOMESTICS_TYPE.WASHER) return "Lavadora";
-    if (value === ELECTRODOMESTICS_TYPE.TV) return "Televisor";
-    if (value === ELECTRODOMESTICS_TYPE.AIR_CONDITIONER)
-      return "Aire acondicionado";
-    if (value === ELECTRODOMESTICS_TYPE.MICROWAVE) return "Microondas";
-    if (value === ELECTRODOMESTICS_TYPE.PC) return "Computadora";
-    if (value === ELECTRODOMESTICS_TYPE.WATER_HEATER)
-      return "Calentador de agua";
   }
 
   function getElectrodomesticBrand(value: ELECTRODOMESTICS_TYPE) {
